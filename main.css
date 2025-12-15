@@ -27,7 +27,20 @@
             position: relative;
         }
 
-        
+        .cv-buttons, .social-buttons {
+            display: flex;
+            justify-content: center; /* centre horizontalement */
+            gap: 20px;               /* espace entre les boutons */
+            margin: 20px 0;          /* espace au-dessus et en dessous */
+        }
+
+        .btn, .btn-outline, .social-btn {
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
 
         /* --- BACKGROUND --- */
         .aurora {
