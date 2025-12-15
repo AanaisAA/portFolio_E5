@@ -27,18 +27,33 @@
             position: relative;
         }
 
-        .cv-buttons, .social-buttons {
+        .cv-buttons {
             display: flex;
-            justify-content: center; /* centre horizontalement */
-            gap: 20px;               /* espace entre les boutons */
-            margin: 20px 0;          /* espace au-dessus et en dessous */
+            justify-content: center;   /* centre les boutons */
+            gap: 15px;                 /* espace entre eux */
+            margin: 20px 0;
         }
 
-        .btn, .btn-outline, .social-btn {
-            padding: 12px 24px;
-            border-radius: 6px;
+        .cv-buttons .btn {
+            padding: 8px 16px;         /* réduit la hauteur */
+            font-size: 14px;           /* texte plus petit */
+            border-radius: 5px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;   /* centre LinkedIn et GitHub */
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-buttons .social-btn {
+            font-size: 13px;           /* plus petit que les boutons principaux */
+            padding: 6px 12px;
+            border-radius: 4px;
+            text-decoration: none;
         }
 
 
