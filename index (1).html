@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Anais A.</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='50' font-size='80' font-weight='bold' font-family='Arial, sans-serif' fill='%2310b981' text-anchor='middle' dy='.35em'>A</text></svg>"
+        type="image/svg+xml">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo-wrapper" onclick="navigateTo('home')">
+                <div class="logo-anim-container">
+                    <div class="anim-circle c1"></div>
+                    <div class="anim-circle c2"></div>
+                    <div class="anim-circle c3"></div>
+                    <div class="anim-circle c4"></div>
+                    <div class="anim-circle c5"></div>
+                    <div class="anim-circle c6"></div>
+                    <div class="anim-circle c7"></div>
+                    <div class="anim-circle c8"></div>
+                    <div class="anim-circle c9"></div>
+                    <div class="anim-circle c10"></div>
+                </div>
+                <div class="logo-text">Anais<span>.Dev</span></div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a onclick="navigateTo('home')" class="active" data-target="home">Accueil</a></li>
+                <li><a onclick="navigateTo('about')" data-target="about">Mon Parcours</a></li>
+                <li><a onclick="navigateTo('projects')" data-target="projects">Projets</a></li>
+                <li><a onclick="navigateTo('articles')" data-target="articles">Veille X Articles</a></li>
+                <li><a onclick="navigateTo('contact')" data-target="contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <nav class="mobile-nav">
+        <a onclick="navigateTo('home')" data-target="home" class="active"><i class="fas fa-home"></i></a>
+        <a onclick="navigateTo('about')" data-target="about"><i class="fas fa-user"></i></a>
+        <a onclick="navigateTo('projects')" data-target="projects"><i class="fas fa-layer-group"></i></a>
+        <a onclick="navigateTo('articles')" data-target="articles"><i class="fas fa-newspaper"></i></a>
+        <a onclick="navigateTo('contact')" data-target="contact"><i class="fas fa-envelope"></i></a>
+    </nav>
+
+    <main>
+        <section id="home" class="active-section">
+            <div class="hero-wrapper">
+                <div class="hero-text">
+                    <span class="tagline">Développeuse Full Stack</span>
+                    <h1>Bonjour, je suis <br><span>Anais A.</span></h1>
+                    <p>Étudiante en BTS SIO SLAM passionnée par le code. J'aime concevoir des applications web élégantes
+                        et fonctionnelles.</p>
+
+                    <div class="hero-btns">
+                        <a href="src/CV_Anais.pdf" target="_blank" class="btn">Télécharger mon CV</a>
+
+                        <a onclick="navigateTo('about')" class="btn btn-outline">Voir mon parcours</a>
+                    </div>
+
+                </div>
+                <div class="hero-photo">
+                    <div class="circle-deco c-1"></div>
+                    <div class="circle-deco c-2"></div>
+                    <div class="photo-frame">
+                        <img src="src/anais_accueil.png" alt="Photo de profil Anaïs" class="profile-pic">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div style="text-align:center;">
+                <h2>Mon Parcours</h2>
+            </div>
+
+            <div class="parcours-layout">
+
+                <div class="column">
+                    <div class="card">
+                        <h3><i class="fas fa-quote-left" style="font-size:1rem; margin-right:5px;"></i> Introduction
+                        </h3>
+                        <p style="color:var(--text-light); line-height:1.6; font-size:0.95rem; text-align: justify;">
+                            Curieuse et méthodique, je n’hésite pas à recommencer proprement pour garantir la réussite.
+                            J'ai une affinité particulière pour l'autonomie technique, comme en témoigne mon serveur web
+                            personnel sur Raspberry Pi.
+                        </p>
+                        <hr style="border:0; border-top:1px solid #eee; margin:1rem 0;">
+                        <ul class="details-list" style="list-style:none;">
+                            <li style="margin-bottom:0.5rem;"><i class="fas fa-language"
+                                    style="color:var(--primary); margin-right:10px;"></i> Français, Anglais (A2),
+                                Espagnol (A3)</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3><i class="fas fa-graduation-cap" style="font-size:1rem; margin-right:5px;"></i> Scolarité
+                        </h3>
+                        <div class="timeline-item">
+                            <span class="timeline-date">2024 - 2026</span>
+                            <h4>BTS SIO Option SLAM</h4>
+                            <p class="timeline-loc">École Supérieure Le Rebours</p>
+                            <p
+                                style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-light); line-height: 1.5;">
+                                Le <strong>BTS SIO</strong> forme aux métiers de l'informatique. J'ai choisi l'option
+                                <strong>SLAM</strong> pour me spécialiser dans le développement d'applications
+                                (Web/Mobile). Cette formation, alliée à mes projets (Symfony, Java), développe ma
+                                polyvalence du cahier des charges au déploiement.
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">2023 - 2024</span>
+                            <h4>BAC STMG Option SIG</h4>
+                            <p class="timeline-loc">Lycée Le Rebours</p>
+                            <p
+                                style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-light); line-height: 1.5;">
+                                Le <strong>Bac STMG option SIG</strong> (Systèmes d'Information de Gestion) m'a permis
+                                de comprendre le rôle de l'information dans les organisations. C'est là que j'ai
+                                découvert les bases de l'algorithmique et du développement web, confirmant mon choix de
+                                poursuivre en BTS SIO.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <h3><i class="fas fa-briefcase" style="font-size:1rem; margin-right:5px;"></i> Expériences</h3>
+                        <div class="timeline-item">
+                            <span class="timeline-date">19 Mai - 27 Juin 2025</span>
+                            <h4>Stage BTS SIO (SLAM)</h4>
+                            <p class="timeline-loc">Paris</p>
+                            <p style="font-size:0.9rem; color:var(--text-main);">Refonte d'un site WordPress (Elementor,
+                                SEO, responsive, CSS).</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">Fév 2025 - Avril 2025</span>
+                            <h4>Animatrice (Bénévole)</h4>
+                            <p class="timeline-loc">Paris</p>
+                            <p style="font-size:0.9rem; color:var(--text-main);">Aide aux devoirs.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">Décembre 2023</span>
+                            <h4>Stage de découverte</h4>
+                            <p class="timeline-loc">APAS-BTP Cabinet Médical, Paris</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">Novembre 2023</span>
+                            <h4>Jeune Sapeur Pompier</h4>
+                            <p class="timeline-loc">Paris</p>
+                            <p style="font-size:0.9rem; color:var(--text-main);">Épreuves écrites, pratiques et
+                                sportives.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <h3><i class="fas fa-laptop-code" style="font-size:1rem; margin-right:5px;"></i> Compétences
+                        </h3>
+                        <div class="skills-group">
+                            <h4>Langages & Back-end</h4>
+                            <div class="badges-container">
+                                <span class="tech-badge"><i class="fab fa-html5"></i> HTML</span>
+                                <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS</span>
+                                <span class="tech-badge"><i class="fab fa-php"></i> PHP</span>
+                                <span class="tech-badge"><i class="fab fa-symfony"></i> Symfony</span>
+                                <span class="tech-badge"><i class="fab fa-java"></i> Java</span>
+                                <span class="tech-badge"><i class="fas fa-code"></i> C++</span>
+                                <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                                <span class="tech-badge"><i class="fas fa-database"></i> SQL</span>
+                            </div>
+                        </div>
+                        <div class="skills-group">
+                            <h4>IDE & Outils de Dev</h4>
+                            <div class="badges-container">
+                                <span class="tech-badge"><i class="fas fa-laptop-code"></i> VS Code</span>
+                                <span class="tech-badge"><i class="fas fa-terminal"></i> IntelliJ</span>
+                                <span class="tech-badge"><i class="fab fa-git-alt"></i> Git</span>
+                                <span class="tech-badge"><i class="fab fa-docker"></i> Docker</span>
+                            </div>
+                        </div>
+                        <div class="skills-group">
+                            <h4>Web, CMS & Design</h4>
+                            <div class="badges-container">
+                                <span class="tech-badge"><i class="fab fa-wordpress"></i> Wordpress</span>
+                                <span class="tech-badge"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                                <span class="tech-badge"><i class="fab fa-figma"></i> Figma</span>
+                                <span class="tech-badge"><i class="fas fa-palette"></i> Canva</span>
+                                <span class="tech-badge"><i class="fas fa-search"></i> SEO</span>
+                            </div>
+                        </div>
+                        <div class="skills-group">
+                            <h4>DevOps & Système</h4>
+                            <div class="badges-container">
+                                <span class="tech-badge"><i class="fab fa-linux"></i> Linux</span>
+                                <span class="tech-badge"><i class="fab fa-windows"></i> Windows</span>
+                                <span class="tech-badge"><i class="fas fa-terminal"></i> SSH</span>
+                                <span class="tech-badge"><i class="fas fa-network-wired"></i> Nginx</span>
+                                <span class="tech-badge"><i class="fas fa-server"></i> Hosting</span>
+                            </div>
+                        </div>
+                        <div class="skills-group">
+                            <h4>Gestion & Sécurité</h4>
+                            <div class="badges-container">
+                                <span class="tech-badge"><i class="fas fa-tasks"></i> Pilotage</span>
+                                <span class="tech-badge"><i class="fas fa-check-double"></i> ClickUp</span>
+                                <span class="tech-badge"><i class="fab fa-trello"></i> Trello</span>
+                                <span class="tech-badge"><i class="fas fa-shield-alt"></i> OWASP</span>
+                                <span class="tech-badge"><i class="fas fa-user-shield"></i> RGPD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects">
+            <div style="text-align:center;">
+                <h2>Mes Projets</h2>
+                <p style="margin-bottom:2rem; color:var(--text-light);">Explorez une sélection de projets développés
+                    durant mon cursus BTS SIO SLAM ainsi que mes initiatives personnelles.</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="card project-card" onclick="toggleProject(this)">
+                    <div class="project-thumb">
+                        <img src="src/Projet_Perso/photo_Serveur.jpg" alt="Capture Raspberry Pi">
+                        <i class="fab fa-raspberry-pi fa-3x"></i>
+                        <span style="margin-left:10px">Serveur Raspberry Pi</span>
+                    </div>
+                    <div class="project-header">
+                        <div>
+                            <h3 class="project-title">Raspberry Pi Serveur</h3>
+                            <span class="project-type">Projet Personnel</span>
+                        </div>
+                        <i class="fas fa-server" style="color:var(--primary)"></i>
+                    </div>
+                    <div class="project-details">
+                        <h4>Objectif</h4>
+                        <p>Configuration d'un serveur web autonome sur Raspberry Pi avec conteneurisation Docker pour
+                            héberger mes projets.</p>
+                        <h4>Réalisations</h4>
+                        <ul>
+                            <li>Installation Ubuntu Server</li>
+                            <li>Configuration Docker</li>
+                            <li>Mise en place serveur web</li>
+                            <li>Accès SSH sécurisé</li>
+                        </ul>
+                        <h4>Technologies</h4>
+                        <div class="badges-container">
+                            <span class="tech-badge"><i class="fab fa-raspberry-pi"></i> Raspberry Pi</span>
+                            <span class="tech-badge"><i class="fab fa-ubuntu"></i> Ubuntu</span>
+                            <span class="tech-badge"><i class="fab fa-docker"></i> Docker</span>
+                            <span class="tech-badge"><i class="fas fa-terminal"></i> SSH</span>
+                        </div>
+                    </div>
+                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+                </article>
+
+                <article class="card project-card" onclick="toggleProject(this)">
+                    <div class="project-thumb">
+                        <img src="src/Projet_etude/WordPress_Studio/Capture d'écran 2025-09-15 141649.png" alt="Site Studio">
+                        <i class="fab fa-wordpress fa-3x"></i>
+                        <span style="margin-left:10px">WordPress Studio</span>
+                    </div>
+                    <div class="project-header">
+                        <div>
+                            <h3 class="project-title">WordPress Studio</h3>
+                            <span class="project-type">Projet d'Étude</span>
+                        </div>
+                        <i class="fas fa-pen-nib" style="color:var(--primary)"></i>
+                    </div>
+                    <div class="project-details">
+                        <h4>Objectif</h4>
+                        <p>Création d'un site web professionnel pour un studio de création utilisant WordPress avec
+                            Elementor.</p>
+                        <h4>Réalisations</h4>
+                        <ul>
+                            <li>Design responsive et moderne</li>
+                            <li>Optimisation SEO</li>
+                            <li>Intégration Elementor</li>
+                        </ul>
+                        <h4>Technologies</h4>
+                        <div class="badges-container">
+                            <span class="tech-badge"><i class="fab fa-wordpress"></i> WordPress</span>
+                            <span class="tech-badge"><i class="fab fa-elementor"></i> Elementor</span>
+                            <span class="tech-badge"><i class="fas fa-search"></i> SEO</span>
+                            <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS</span>
+                        </div>
+                    </div>
+                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+                </article>
+
+                <article class="card project-card" onclick="toggleProject(this)">
+                    <div class="project-thumb">
+                        <img src="src/Projet_etude/API_Yuka/Capture d'écran 2025-12-03 133957.png" alt="Capture Site Yuka">
+                        <i class="fas fa-mobile-alt fa-3x"></i>
+                        <span style="margin-left:10px">API Yuka</span>
+                    </div>
+                    <div class="project-header">
+                        <div>
+                            <h3 class="project-title">API Yuka</h3>
+                            <span class="project-type">Projet d'Étude</span>
+                        </div>
+                        <i class="fas fa-carrot" style="color:var(--primary)"></i>
+                    </div>
+                    <div class="project-details">
+                        <h4>Objectif</h4>
+                        <p>Développement d'une application mobile communiquant avec l'API Yuka pour l'analyse
+                            nutritionnelle des produits.</p>
+                        <h4>Réalisations</h4>
+                        <ul>
+                            <li>Intégration API Yuka</li>
+                            <li>Interface utilisateur intuitive</li>
+                            <li>Gestion des données en temps réel</li>
+                        </ul>
+                        <h4>Technologies</h4>
+                        <div class="badges-container">
+                            <span class="tech-badge"><i class="fas fa-mobile-alt"></i> App Mobile</span>
+                            <span class="tech-badge"><i class="fas fa-code-branch"></i> API REST</span>
+                        </div>
+                    </div>
+                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+                </article>
+
+                <article class="card project-card" onclick="toggleProject(this)">
+                    <div class="project-thumb">
+                        <img src="src/Projet_etude/Site vitrine/Capture d'écran 2025-12-03 134611.png" alt="Site Vitrine">
+                        <i class="fas fa-laptop-code fa-3x"></i>
+                        <span style="margin-left:10px">Site Vitrine</span>
+                    </div>
+                    <div class="project-header">
+                        <div>
+                            <h3 class="project-title">Site Vitrine</h3>
+                            <span class="project-type">Projet d'Étude</span>
+                        </div>
+                        <i class="fas fa-globe" style="color:var(--primary)"></i>
+                    </div>
+                    <div class="project-details">
+                        <h4>Objectif</h4>
+                        <p>Création d'un site vitrine moderne et responsive pour présenter les services d'une
+                            entreprise.</p>
+                        <h4>Réalisations</h4>
+                        <ul>
+                            <li>Design moderne et épuré</li>
+                            <li>Interface responsive</li>
+                            <li>Optimisation des performances</li>
+                            <li>Formulaire de contact fonctionnel</li>
+                        </ul>
+                        <h4>Technologies</h4>
+                        <div class="badges-container">
+                            <span class="tech-badge"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span class="tech-badge"><i class="fas fa-mobile"></i> Responsive</span>
+                        </div>
+                    </div>
+                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+                </article>
+
+                <article class="card project-card" onclick="toggleProject(this)">
+                    <div class="project-thumb">
+                        <img src="src/Projet_etude/Projet java/Maquette.png" alt="Maquette Projet Java">
+                        <i class="fab fa-java fa-3x"></i>
+                        <span style="margin-left:10px">Projet Java</span>
+                    </div>
+                    <div class="project-header">
+                        <div>
+                            <h3 class="project-title">Projet Java</h3>
+                            <span class="project-type">Projet d'Étude</span>
+                        </div>
+                        <i class="fas fa-coffee" style="color:var(--primary)"></i>
+                    </div>
+                    <div class="project-details">
+                        <h4>Objectif</h4>
+                        <p>Développement d'une application Java orientée objet pour la gestion de café avec maquette
+                            fonctionnelle.</p>
+                        <h4>Réalisations</h4>
+                        <ul>
+                            <li>Architecture orientée objet</li>
+                            <li>Maquette interactive</li>
+                            <li>Gestion des données</li>
+                        </ul>
+                        <h4>Technologies</h4>
+                        <div class="badges-container">
+                            <span class="tech-badge"><i class="fab fa-java"></i> Java</span>
+                            <span class="tech-badge"><i class="fas fa-database"></i> BDD</span>
+                            <span class="tech-badge"><i class="fas fa-palette"></i> Canva</span>
+                            <span class="tech-badge"><i class="fas fa-check-double"></i> ClickUp</span>
+                        </div>
+                    </div>
+                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+                </article>
+
+               <article class="card project-card" onclick="toggleProject(this)">
+                    <div class="project-thumb">
+                        <img src="src/Projet_etude/Projet_interactif/page_de_garde.png" alt="Capture Jeu Interactif">
+                        <i class="fas fa-gamepad fa-3x"></i>
+                        <span style="margin-left:10px">Jeu Interactif</span>
+                    </div>
+                    <div class="project-header">
+                        <div>
+                            <h3 class="project-title">Jeu Interactif</h3>
+                            <span class="project-type">Projet d'Étude</span>
+                        </div>
+                        <i class="fas fa-laptop-code" style="color:var(--primary)"></i>
+                    </div>
+                    <div class="project-details">
+                        <h4>Objectif</h4>
+                        <p>Concevoir un mini‑jeu en Java avec <strong>IntelliJ</strong> et <strong>Scene Builder</strong>, en utilisant JavaFX pour créer une interface graphique interactive.</p>
+                        
+                        <h4>Réalisations</h4>
+                        <ul>
+                            <li>Création d’une interface graphique avec Scene Builder</li>
+                            <li>Gestion des événements et contrôleurs JavaFX</li>
+                            <li>Développement d’un mini‑jeu interactif (logique et interface)</li>
+                        </ul>
+                        
+                        <h4>Technologies</h4>
+                        <div class="badges-container">
+                            <span class="tech-badge"><i class="fab fa-java"></i> Java</span>
+                            <span class="tech-badge"><i class="fas fa-cube"></i> Scene Builder</span>
+                            <span class="tech-badge"><i class="fas fa-laptop-code"></i> IntelliJ IDEA</span>
+                        </div>
+                    </div>
+                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+                </article>
+            <article class="card project-card" onclick="toggleProject(this)">
+                <div class="project-thumb">
+                    <img src="src/projet_etude/Projet_Symfony/ProjetSymfony.png" alt="Capture IMMOSYNC Symfony">
+                    <i class="fas fa-code fa-3x"></i>
+                    <span style="margin-left:10px">Application Symfony</span>
+                </div>
+                <div class="project-header">
+                    <div>
+                        <h3 class="project-title">Application Symfony</h3>
+                        <span class="project-type">Projet d'Étude</span>
+                    </div>
+                    <i class="fab fa-php" style="color:var(--primary)"></i>
+                </div>
+                <div class="project-details">
+                    <h4>Objectif</h4>
+                    <p>Développer une application web et mobile pour le suivi de chantiers immobiliers, avec gestion des rôles (propriétaire, inspecteur, entrepreneur) et validation des étapes de travaux.</p>
+                    
+                    <h4>Réalisations</h4>
+                    <ul>
+                        <li>Création d’une architecture MVC avec Symfony</li>
+                        <li>Développement d’interfaces spécifiques selon le rôle utilisateur</li>
+                        <li>Suivi des chantiers, validation des inspections et des travaux</li>
+                        <li>Version mobile responsive pour les inspecteurs sur le terrain</li>
+                    </ul>
+                    
+                    <h4>Technologies</h4>
+                    <div class="badges-container">
+                        <span class="tech-badge"><i class="fab fa-php"></i> PHP / Symfony</span>
+                        <span class="tech-badge"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="tech-badge"><i class="fas fa-mobile-alt"></i> Web Mobile</span>
+                        <span class="tech-badge"><i class="fas fa-users"></i> Gestion des rôles</span>
+                    </div>
+                </div>
+                <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+            </article>
+
+            <article class="card project-card" onclick="toggleProject(this)">
+                <div class="project-thumb">
+                    <img src="src/stage/Accueil.png" alt="Capture Refonte Site Web">
+                    <i class="fab fa-wordpress fa-3x"></i>
+                    <span style="margin-left:10px">Refonte Site Web</span>
+                </div>
+                <div class="project-header">
+                    <div>
+                        <h3 class="project-title">Refonte d’un Site Web</h3>
+                        <span class="project-type">Stage (6 semaines)</span>
+                    </div>
+                    <i class="fas fa-globe" style="color:var(--primary)"></i>
+                </div>
+                <div class="project-details">
+                    <h4>Objectif</h4>
+                    <p>Moderniser et améliorer un site web existant en refaisant entièrement le design et la structure, afin d’offrir une meilleure expérience utilisateur et une identité visuelle plus professionnelle.</p>
+                    
+                    <h4>Réalisations</h4>
+                    <ul>
+                        <li>Analyse du site existant et recueil des besoins</li>
+                        <li>Refonte complète du design avec <strong>WordPress</strong> et <strong>Elementor</strong></li>
+                        <li>Faciliter la lecture du site</li>
+                    </ul>
+                    
+                    <h4>Technologies</h4>
+                    <div class="badges-container">
+                        <span class="tech-badge"><i class="fab fa-wordpress"></i> WordPress</span>
+                        <span class="tech-badge"><i class="fas fa-pencil-ruler"></i> Elementor</span>
+                        <span class="tech-badge"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+                        <span class="tech-badge"><i class="fas fa-search"></i> SEO de base</span>
+                    </div>
+                </div>
+                <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+            </article>
+
+            </div>
+
+        </section>
+
+        <section id="articles">
+
+            <div style="text-align:center;">
+                <h2>Veille Technologique</h2>
+            </div>
+
+            <div class="veille-section">
+                <div class="veille-card">
+
+                    <div class="veille-header-row">
+                        <h3 class="veille-title">Utilisation des deepfakes dans les arnaques</h3>
+                        
+                    </div>
+
+                    <p class="veille-intro">Les technologies de deepfake représentent une menace croissante pour la
+                        société moderne, permettant de créer des contenus multimédia falsifiés de manière quasi
+                        indétectable.</p>
+                        
+                    <div class="dashboard-grid">
+                        <div class="dashboard-box">
+                            <h3><i class="fas fa-exclamation-triangle"></i> Menaces principales</h3>
+                            <ul class="dashboard-list">
+                                <li>Arnaques financières (usurpation d'identité)</li>
+                                <li>Chantage et extorsion</li>
+                                <li>Désinformation politique</li>
+                                <li>Harcèlement et diffamation</li>
+                                <li>Manipulation de l'opinion publique</li>
+                            </ul>
+                        </div>
+                        <div class="dashboard-box">
+                            <h3><i class="fas fa-chart-line"></i> Impact croissant</h3>
+                            <ul class="dashboard-list">
+                                <li>Technologie accessible au grand public</li>
+                                <li>Qualité des faux médias en constante amélioration</li>
+                                <li>Diffusion massive via réseaux sociaux</li>
+                                <li>Coûts de production de plus en plus bas</li>
+                                <li>Difficulté de détection pour les non-experts</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-number">+500%</span>
+                            <span class="stat-label">Augmentation</span>
+                            <span class="stat-sub">(depuis 2019)</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">70%</span>
+                            <span class="stat-label">Défaillance</span>
+                            <span class="stat-sub">Détection humaine</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">486 Millions d'euros</span>
+                            <span class="stat-label">Coût estimé en France </span>
+                            <span class="stat-sub">Arnaques (2024)</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">96%</span>
+                            <span class="stat-label">Victimes en France</span>
+                            <span class="stat-sub">Femmes ciblées</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div style="text-align:center;">
+                <h2>Mes Articles</h2>
+            </div>
+
+            <div id="articles-list" class="articles-grid"></div>
+
+            <div id="article-detail" style="display:none;">
+                <div class="back-btn" onclick="closeArticle()">
+                    <i class="fas fa-arrow-left"></i> Retour aux articles
+                </div>
+                <div id="article-content-container"></div>
+            </div>
+        </section>
+
+        <div class="modal-overlay" id="videoModal" onclick="closeVideo()">
+            <div class="video-container" onclick="event.stopPropagation()">
+                <div class="video-iframe-placeholder" id="videoContainer">
+            
+                </div>
+            </div>
+        </div>
+
+        <section id="contact">
+            <div style="text-align:center;">
+                <h2>Contact</h2>
+            </div>
+            <div class="contact-wrapper">
+                <div>
+                    <h3>Mes Réseaux</h3>
+                    <a href="mailto:aber.anais@icloud.com" class="social-btn"><i class="far fa-envelope"></i> Email</a>
+                    <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="#" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+                <div class="card">
+                    <h3>Message</h3>
+                    <form onsubmit="event.preventDefault(); alert('Envoyé !');">
+                        <input type="text" placeholder="Nom" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea rows="4" placeholder="Message" required></textarea>
+                        <button class="btn" style="width:100%">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // --- DATA ARTICLES ---
+        const articlesData = [
+            {
+                id: 1,
+                title: "Les deepfakes ont volé 1,3 Md d'euros en 2025",
+                source: "Le BigData",
+                description: "Analyse des technologies de deepfake appliquées au Big Data et leurs implications en matière de sécurité des données.",
+                tags: ["Applications malveillantes", "Solutions de détection"],
+                content: `... (Contenu identique) ...`,
+                type: 'article',
+                fileUrl: "src/article_telecharger/LeBigData.pdf"            
+            },
+            {
+                id: 2,
+                title: "Encadrement des deepfakes en période électorale",
+                source: "Le Sénat",
+                description: "Rapport parlementaire sur les deepfakes et les mesures législatives nécessaires pour lutter contre la désinformation.",
+                tags: ["Cadre légal actuel", "Propositions de loi", "Recommandations"],
+                content: `...`,
+                type: 'article',
+                fileUrl: "src/article_telecharger/LeSenat.pdf"            
+
+            },
+            {
+                id: 3,
+                title: "Deepfake ou hypertrucage : connaître la réglementation",
+                source: "Village Justice",
+                description: "Aspects juridiques des deepfakes et conséquences légales pour les victimes d'arnaques et de diffamation.",
+                tags: ["Droit à l'image", "Responsabilité civile", "Poursuites pénales"],
+                content: `...`,
+                type: 'article',
+                fileUrl: "src/article_telecharger/VillageJustice.pdf"         
+
+            },
+            {
+                id: 4,
+                title: "Les deepfakes et la crise du savoir",
+                source: "UNESCO",
+                description: "Analyse globale de l'impact des deepfakes sur la désinformation et la confiance dans les médias numériques.",
+                tags: ["Impact mondial", "Éducation aux médias", "Lutte collaborative"],
+                content: `...`,
+                type: 'article',
+                fileUrl: "src/article_telecharger/Unesco.pdf"           
+
+            },
+            {
+                id: 5,
+                title: "Deepfake et désinformation : le défi majeur de 2025",
+                source: "Le Mag",
+                description: "Technologies de détection des deepfakes et outils modernes pour identifier les contenus falsifiés.",
+                tags: ["Outils de détection", "IA de vérification", "Solutions pratiques"],
+                content: `...`,
+                type: 'article',
+                fileUrl: "src/article_telecharger/LeMag.pdf"           
+
+            },
+            {
+                id: 6,
+                title: "Deepfakes 2025 : Plus dangereux que les cyberattaques",
+                source: "Roboto",
+                description: "Analyse des algorithmes de deep learning utilisés pour créer des deepfakes et leurs faiblesses.",
+                tags: ["Technologies GAN", "Procédés de génération", "Vulnérabilités exploitées"],
+                content: `...`,
+                type: 'article',
+                fileUrl: "src/article_telecharger/Roboto.pdf"           
+
+            },
+            {
+                id: 7,
+                title: "Lutte contre les deepfakes : quelles réponses ?",
+                source: "Numerama",
+                description: "Tendances actuelles et futures des technologies deepfake et leur impact sur la cybersécurité.",
+                tags: ["Évolutions récentes", "Menaces émergentes", "Perspectives futures"],
+                content: `...`,
+                type: 'article',                
+                fileUrl: "src/article_telecharger/Numerama.pdf"          
+            },
+            {
+                id: 8,
+                title: "Un chef d'entreprise reçoit un appel qui aurait pu lui coûter cher",
+                source: "CIO",
+                description: "Reçoit d'appel, imitation du président qui aurait pu coûter cher.",
+                tags: ["mpact financier", "voix truffer", "utilisation du pouvoir des présidents"],
+                content: `...`,
+                type: 'article',
+                fileUrl: "src/article_telecharger/Faillite_Entreprise.pdf"          
+            },
+            {
+                id: 9,
+                title: "Le deepfake mene au harcelement",
+                source: "CNEWS",
+                description: "12 jeunes filles vivent un harcelement",
+                tags: ["impact psycologique", "harcelement scolaire"],
+                content: `...`,
+                type: 'article',
+                fileUrl: "src/article_telecharger/Harcelement_College.pdf"            
+            },
+            {
+                id: 10,
+                title: "Une influenceuse connue au coeur du deepfake",
+                source: "Tiktok",
+                description: "Etant une personne connu, elle témoigne qu'elle a été victime de deepfakes",
+                tags: ["Cyber harcelement", "Fausse vidéo", "Arnaque"],
+                type: 'video',
+                embedUrl: "https://www.tiktok.com/embed/7392946527083269409"
+            }
+        ];
+
+        // Fonction Render Mise à jour pour gérer type: 'video'
+        function renderArticles() {
+            const container = document.getElementById('articles-list');
+
+            // On injecte les contenus textuels manquants pour l'affichage (simulé ici pour abréger le code ci-dessus, mais dans votre fichier final gardez le contenu complet)
+            // Pour l'affichage correct :
+            articlesData[0].content = `<div class="detail-meta">Source : Le BigData</div><h2 class="detail-title">Deepfakes et Big Data</h2><div class="detail-content"><p>Contenu complet de l'article...</p></div>`;
+            // ... Répétez pour les autres si nécessaire ou gardez votre tableau rempli.
+
+            container.innerHTML = articlesData.map(article => {
+                let buttonHtml = '';
+                if (article.type === 'video') {
+                    buttonHtml = `
+                        <button class="btn-play-full" onclick="event.stopPropagation(); openVideo('${article.embedUrl}')">
+                            <i class="fas fa-play"></i> Voir la vidéo
+                        </button>`;
+                } else {
+                    buttonHtml = `
+                        <a href="${article.fileUrl}" target="_blank" class="btn-download-full" onclick="event.stopPropagation();">
+                            <i class="fas fa-file-download"></i> Télécharger le PDF
+                        </a>`;
+                }
+
+                return `
+                <article class="card article-card" onclick="${article.type === 'video' ? `openVideo('${article.embedUrl}')` : `openArticle(${article.id})`}">
+                    <div class="article-meta">${article.source}</div>
+                    <h3 class="article-title">${article.title}</h3>
+                    <p class="article-excerpt">${article.description}</p>
+                    <div class="article-points">
+                        ${article.tags.map(tag => `<span class="point-badge">${tag}</span>`).join('')}
+                    </div>
+                    <div class="article-actions" style="margin-top:auto;">
+                        ${buttonHtml}
+                    </div>
+                </article>
+            `}).join('');
+        }
+
+        // FONCTIONS POUR LES ARTICLES
+        function openArticle(articleId) {
+            const article = articlesData.find(a => a.id === articleId);
+            if (!article) return;
+
+            const listContainer = document.getElementById('articles-list');
+            const detailContainer = document.getElementById('article-detail');
+
+            listContainer.style.display = 'none';
+            detailContainer.style.display = 'block';
+
+            const contentContainer = document.getElementById('article-content-container');
+            contentContainer.innerHTML = `
+                <div class="detail-meta">Source : ${article.source}</div>
+                <h2 class="detail-title">${article.title}</h2>
+                <div class="detail-content">
+                    <p><strong>Description :</strong> ${article.description}</p>
+                    <p><strong>Tags :</strong> ${article.tags.join(', ')}</p>
+                    <p><strong>Contenu complet :</strong> Cet article est disponible en téléchargement PDF.</p>
+                </div>
+            `;
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function closeArticle() {
+            const listContainer = document.getElementById('articles-list');
+            const detailContainer = document.getElementById('article-detail');
+
+            listContainer.style.display = 'grid';
+            detailContainer.style.display = 'none';
+        }
+
+        // VIDEO MODAL LOGIC
+       function openVideo(url) {
+            const modal = document.getElementById('videoModal');
+            const container = document.getElementById('videoContainer');
+
+            // Transforme le lien TikTok en version embed
+            const embedUrl = url.replace("/video/", "/embed/");
+
+            // Injecte l'iframe dans le container
+             container.innerHTML = `
+                <iframe src="${url}" 
+                width="325" height="580" 
+                frameborder="0" allowfullscreen></iframe>
+                `;
+
+                // Affiche le modal
+                modal.style.display = 'flex';
+                setTimeout(() => { modal.classList.add('show'); }, 10);
+        }
+        function closeVideo() {
+            const modal = document.getElementById('videoModal');
+            const container = document.getElementById('videoContainer');
+            modal.classList.remove('show');
+
+            setTimeout(() => { modal.style.display = 'none'; }, 300);
+            container.innerHTML = '';
+        }
+
+        // INITIALISATION
+        document.addEventListener('DOMContentLoaded', () => {
+            renderArticles();
+        });
+
+        // Navigation SPA
+        function navigateTo(targetId) {
+            document.querySelectorAll('a[data-target]').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-target') === targetId) link.classList.add('active');
+            });
+            document.querySelectorAll('section').forEach(sec => {
+                sec.classList.remove('active-section');
+                void sec.offsetWidth;
+            });
+            const target = document.getElementById(targetId);
+            if (target) {
+                target.classList.add('active-section');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        function toggleProject(element) {
+            if (element.classList.contains('expanded')) {
+                element.classList.remove('expanded');
+                return;
+            }
+            document.querySelectorAll('.project-card').forEach(card => {
+                card.classList.remove('expanded');
+            });
+            element.classList.add('expanded');
+        }
+    </script>
+</body>
+
+</html>
